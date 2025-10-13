@@ -1,0 +1,236 @@
+/* ========== CONTACT HEADER ========== */
+.contact-header {
+  background-color: var(--bg-primary);
+  border-bottom: 2px solid var(--bg-section);
+}
+
+.contact-header h1 {
+  font-family: var(--heading-font);
+  color: var(--text-color);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-header p {
+  font-family: var(--text-font);
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+}
+
+/* ========== CONTACT INFO CARDS ========== */
+.contact-info {
+  background-color: var(--bg-primary);
+}
+
+.info-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.info-icon {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.info-card h3 {
+  font-family: var(--heading-font);
+  color: var(--text-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.info-card p {
+  font-family: var(--text-font);
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.info-card a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.info-card a:hover {
+  color: var(--link-hover-color);
+}
+
+/* ========== CONTACT FORM ========== */
+.contact-form-section {
+  background-color: var(--bg-primary);
+}
+
+.contact-form-section h2 {
+  font-family: var(--heading-font);
+  color: var(--text-color);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.contact-form .form-label {
+  font-family: var(--heading-font);
+  color: var(--text-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+  font-family: var(--text-font);
+  color: var(--text-color);
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+  border-color: var(--text-color);
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
+  background-color: #fff;
+}
+
+.contact-form .form-control::placeholder {
+  color: var(--text-secondary);
+}
+
+.contact-form .form-check-label {
+  font-family: var(--text-font);
+  color: var(--text-color);
+  margin-left: 0.5rem;
+}
+
+.contact-form .form-check-input {
+  border: 2px solid #e0e0e0;
+  cursor: pointer;
+}
+
+.contact-form .form-check-input:checked {
+  background-color: var(--text-color);
+  border-color: var(--text-color);
+}
+
+.btn-contact {
+  font-family: var(--heading-font);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--text-color);
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 2rem;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-contact:hover {
+  background-color: var(--link-hover-color);
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+.btn-contact:active {
+  transform: translateY(0);
+}
+
+/* ========== MAP SECTION ========== */
+.map-section {
+  background-color: var(--bg-section);
+}
+
+.map-section h2 {
+  font-family: var(--heading-font);
+  color: var(--text-color);
+  font-size: 2.5rem;
+}
+
+/* ========== FAQ SECTION ========== */
+.faq-section {
+  background-color: var(--bg-primary);
+}
+
+.faq-section h2 {
+  font-family: var(--heading-font);
+  color: var(--text-color);
+  font-size: 2.5rem;
+}
+
+.accordion-button {
+  font-family: var(--heading-font);
+  color: var(--text-color);
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f9f9f9;
+  border-color: var(--text-color);
+  color: var(--text-color);
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  border-color: var(--text-color);
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
+  background-color: #fff;
+}
+
+.accordion-button::after {
+  background-color: var(--text-color);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+  font-family: var(--text-font);
+  color: var(--text-secondary);
+  background-color: #fafafa;
+  border: 2px solid #e0e0e0;
+  border-top: none;
+  padding: 1.5rem;
+  line-height: 1.7;
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 1rem;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+
+  .contact-form-section h2,
+  .map-section h2,
+  .faq-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .info-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .accordion-button {
+    font-size: 1rem;
+  }
+}

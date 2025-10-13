@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Marcellus&display=swap");
+
+/* ========== VARIABLES GLOBALES ========== */
+:root {
+  /* Polices */
+  --heading-font: "Marcellus", sans-serif;
+  --text-font: "Jost", sans-serif;
+
+  /* Couleurs de fond */
+  --bg-primary: #f1f1f0;
+  --bg-section: #f8f9fa;
+
+  /* Couleurs de texte */
+  --text-color: #000;
+  --text-secondary: #6c757d;
+
+  /* Couleurs de liens */
+  --link-color: inherit;
+  --link-hover-color: #000;
+}
+
+/* ========== STYLES GÉNÉRIQUES ========== */
+body {
+  font-family: var(--text-font);
+  color: var(--text-color);
+  background-color: var(--bg-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  color: var(--text-color);
+}
+
+h5 {
+  color: var(--text-color);
+}
+
+p {
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+/* ========== NAVIGATION ========== */
+.navbar {
+  background-color: var(--bg-primary) !important;
+}
+
+.navbar-brand {
+  font-family: var(--heading-font);
+  color: var(--text-color) !important;
+  font-size: 2rem;
+}
+
+.nav-link {
+  font-family: var(--text-font);
+  color: var(--text-color) !important;
+  font-size: 1.2rem;
+}
+
+.social-icons a {
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--link-hover-color);
+}
+
+/* ========== NEW COLLECTIONS ========== */
+.new-collection {
+  background-color: var(--bg-primary);
+}
+
+.new-collection h1 {
+  font-family: var(--heading-font);
+  color: var(--text-color);
+}
+
+.new-collection p {
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+
+.clothes-card a {
+  text-decoration: none;
+}
+
+.clothes-card {
+  transition: transform 0.3s ease;
+}
+
+.clothes-card:hover {
+  transform: translateY(-5px);
+}
+
+.clothes-card img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.text-content {
+  width: 100%;
+  max-width: 300px;
+}
+
+.text-content h3 {
+  font-family: var(--heading-font);
+  color: var(--text-color);
+}
+
+.text-content p {
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+
+/* ========== FEATURES ========== */
+.features {
+  background-color: var(--bg-section) !important;
+}
+
+.global-features h3 {
+  font-family: var(--heading-font);
+  color: var(--text-color);
+}
+
+.global-features p {
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+
+.global-features i {
+  color: var(--text-color);
+}
+
+/* ========== CATÉGORIES ========== */
+.categories {
+  background-color: var(--bg-section) !important;
+}
+
+.categories a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.categories h5 {
+  font-family: var(--heading-font);
+  color: var(--text-color);
+}
+
+.effect-img {
+  filter: grayscale(0%);
+  transition: filter 0.4s ease, transform 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.effect-img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.01);
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: var(--bg-primary);
+  color: var(--text-color);
+}
+
+footer h2 {
+  font-family: var(--heading-font);
+  color: var(--text-color);
+}
+
+footer p {
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+
+footer span {
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+
+footer a {
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--link-hover-color);
+}
+
+.footer-elements ul li a {
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.footer-elements ul li a:hover {
+  color: var(--link-hover-color);
+}
+
+.bottom-bar {
+  background-color: var(--bg-primary);
+}
+
+.bottom-bar p {
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+
+.bottom-bar i {
+  color: var(--text-color);
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin-right: 1rem;
+}
+
+.bottom-bar i:hover {
+  color: var(--link-hover-color);
+  transform: scale(1.2);
+}
